@@ -251,3 +251,95 @@
 .receta-card__ingredientes li {
   margin-bottom: 6px;
 }
+
+.app {
+  padding: 30px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app__header {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.app__header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 2.4vw, 3rem);
+}
+
+.app__header p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.app__controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.filtro-categoria {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filtro-categoria__label {
+  font-weight: 600;
+  margin: 0;
+}
+
+.filtro-categoria__botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filtro-categoria__boton {
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  color: #333;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.filtro-categoria__boton.is-active,
+.filtro-categoria__boton:hover {
+  background: #ffebf5;
+  border-color: #ff9de1;
+}
+
+.app__busqueda-label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 260px;
+}
+
+.app__busqueda {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 1rem;
+}
+
+.app__sin-resultado {
+  text-align: center;
+  padding: 24px;
+  margin: 0;
+  color: #666;
+  font-size: 1.05rem;
+}
+
+.lista-recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
