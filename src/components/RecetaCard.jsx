@@ -1,16 +1,6 @@
 import PropTypes from 'prop-types'
 
-/**
- * RecetaCard muestra los datos principales de una receta de forma clara y segura.
- *
- * Props esperadas:
- * - nombre: string
- * - origen: string
- * - porciones: number
- * - categoria: string
- * - descripcion: string
- * - ingredientes: string[]
- */
+
 function RecetaCard({
   nombre,
   origen,
