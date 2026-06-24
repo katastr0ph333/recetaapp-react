@@ -182,3 +182,72 @@
     border-right-color: var(--border);
   }
 }
+
+.receta-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+  max-width: 420px;
+  margin: 0 auto 24px;
+}
+
+.receta-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.receta-card__nombre {
+  font-size: 1.3rem;
+  margin: 0 0 6px;
+}
+
+.receta-card__origen,
+.receta-card__meta,
+.receta-card__descripcion {
+  margin: 0 0 10px;
+  line-height: 1.5;
+}
+
+.receta-card__categoria {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.receta-card--entrada .receta-card__categoria {
+  background: #d98dff;
+}
+
+.receta-card--fondo .receta-card__categoria {
+  background: #7bdff2;
+}
+
+.receta-card--postre .receta-card__categoria {
+  background: #ffa8a8;
+}
+
+.receta-card--default .receta-card__categoria {
+  background: #999;
+}
+
+.receta-card__ingredientes h3 {
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.receta-card__ingredientes ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.receta-card__ingredientes li {
+  margin-bottom: 6px;
+}
