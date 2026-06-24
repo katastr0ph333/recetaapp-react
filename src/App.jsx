@@ -14,7 +14,7 @@ function App() {
 
   const manejadorBusqueda = (evento) => {
     const valorBruto = evento.target.value
-    const valorNormalizado = valorBruto.trim().slice(0, 40)
+    const valorNormalizado = valorBruto.slice(0, 40)
     setBusqueda(valorNormalizado)
   }
 
@@ -28,11 +28,14 @@ function App() {
     })
   }, [categoriaSeleccionada, busqueda])
 
+  const vegetarianCount = recetas.filter((receta) => receta.esVegetariana).length
+
   return (
     <main className="app">
       <header className="app__header">
         <h1>Recetario digital</h1>
         <p>Selecciona una receta para ver su categoría, origen e ingredientes claramente organizados.</p>
+        <p className="app__vegetarian-count">Recetas vegetarianas: {vegetarianCount}</p>
       </header>
 
       <section className="app__controles">
