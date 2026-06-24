@@ -1,0 +1,54 @@
+etapa 1 
+
+prompt
+
+
+ necesito verificar que el arrary en app.jsx y verificar la consola que carga(console.log), crear archivo readme.md, ia.txt
+
+la sugrerencia fue util ya qu ayudo a verificar que estuviera correcto la carga del array de recetas
+
+no corregi nada 
+
+
+etapa 2 
+promt 
+
+en RecetaCard.jsx se debe recibir por props: nombre, origen, porciones, categoria, descripcion, ingredientes.
+ Muestra la información de forma ordenada y aplica un estilo visual distinto según la categoría (Entrada, Fondo, Postre). 
+ Usa PropTypes para validar las props y define valores por defecto. Evita dangerouslySetInnerHTML y no incluyas credenciales en el código.
+
+ fue de utilida 
+
+ no se hizo modificacion 
+
+ etapa 3 
+
+ promp 
+  desde ListaRecetas.jsx debe recibir un array de recetas por props. Recorre el array con .map() y renderiza un RecetaCard por cada receta, usando el id como key.
+   En App.jsx, importa los datos desde src/data/recetas.js y pásalos a ListaRecetas.
+
+media utilidad, ya que hubo un fallo en la instalacion de una dependencias
+
+se tuvo que corregir la version y la instalcion de proptypes 
+
+etapa 4
+
+prompt 
+en FiltroCategoria.jsx agregar  botones o un selector para filtrar por categoría: Todas, Entrada, Fondo, Postre. 
+En App.jsx, usa useState para manejar el filtro y un campo de búsqueda controlado por nombre. Aplica ambos filtros antes de pasar los datos a ListaRecetas. Si no hay coincidencias, muestra el mensaje "No hay recetas que coincidan". Valida y normaliza el texto de búsqueda (trim y límite de caracteres).
+
+fue de utilidad agrego selector para filtrado por categoria
+
+etpa 5 
+prompt 
+Agrega en RecetaCard un resaltado visual para recetas con esVegetariana: true (ejemplo: etiqueta “VEG” o borde distinto). 
+En App.jsx, agrega un contador que muestre cuántas recetas son vegetarianas. 
+haz un run dev para verificar
+
+
+promp analisis.md 
+ayudame a identificar los elementos  de react que resuelven la problematica 
+
+que ventaja tiene dividir el recetario en componentes en lugar de escribir todo en un solo archivo?
+
+que diferencia hay entre props y estado en la solucion? 

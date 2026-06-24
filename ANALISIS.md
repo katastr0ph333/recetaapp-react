@@ -1,4 +1,4 @@
-# Análisis de la solución en React para el recetario digital
+
 
 ## 1. Componente
 ¿Dónde lo usas en este problema?
@@ -45,5 +45,5 @@
 1. ¿Qué ventaja tiene dividir el recetario en componentes en lugar de escribir todo en un solo archivo?
 - Dividir en componentes mejora la claridad y el orden del proyecto. Facilita el mantenimiento y la lectura, reduce errores y permite reutilizar piezas como la tarjeta de receta en diferentes vistas.
 
-2. ¿Qué diferencia hay entre props y estado en tu solución? Da un ejemplo concreto de cada uno tomado de esta aplicación.
+2. ¿Qué diferencia hay entre props y estado en tu solución? 
 - `props` son datos que recibe un componente desde su padre, por ejemplo `RecetaCard` recibe `receta` con nombre, categoría y si es vegetariana. `estado` es información interna de un componente que puede cambiar con el tiempo, por ejemplo `mostrarSoloVegetarianas` en `App` controla si la lista filtra recetas vegetarianas.
